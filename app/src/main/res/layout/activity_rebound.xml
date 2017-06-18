@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccentDark"
+    tools:context="io.psych.io2017.dynamicanimation.ReboundActivity"
+    >
+    <FrameLayout
+        android:id="@+id/animation_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:layout_alignParentTop="true"
+        />
+    <Button
+        android:id="@+id/button_add_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_faster"
+        android:text="Add Icon"
+        />
+    <Button
+        android:id="@id/button_faster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_slower"
+        android:text="Faster"
+        />
+    <Button
+        android:id="@id/button_slower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Slower"
+        />
+</RelativeLayout>

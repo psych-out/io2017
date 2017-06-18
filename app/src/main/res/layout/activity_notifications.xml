@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorAccentDark"
+    tools:context="io.psych.io2017.notifications.NotificationsActivity"
+    >
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        />
+    <Button
+        android:id="@+id/button_send_headliner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Headliner"
+        />
+    <Button
+        android:id="@+id/button_send_emergency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Emergency"
+        />
+    <Button
+        android:id="@+id/button_send_normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Normal"
+        />
+    <Button
+        android:id="@+id/button_send_extra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Extra"
+        />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="puck_size">72dp</dimen>
+    <dimen name="collapsable_menu_spacing">64dp</dimen>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="psych_shortcut"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/appshortcut_short_label"
+        >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="io.psych.io2017"
+            android:targetClass="io.psych.io2017.MainActivity"
+            />
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="io.psych.io2017"
+            android:targetClass="io.psych.io2017.appshortcuts.AppShortcutActivity"
+            />
+    </shortcut>
+</shortcuts>

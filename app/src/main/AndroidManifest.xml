@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="io.psych.io2017"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/puck_pineapple"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/puck_pineapple"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts"/>
+        </activity>
+        <activity android:name=".dynamicanimation.DynamicAnimationActivity">
+        </activity>
+        <activity android:name=".dynamicanimation.ReboundActivity">
+        </activity>
+        <activity android:name=".architecture.ViewModelActivity">
+        </activity>
+        <activity android:name=".downloadablefonts.DownloadableFonts">
+        </activity>
+        <activity android:name=".notifications.NotificationsActivity">
+        </activity>
+        <activity android:name=".appshortcuts.AppShortcutActivity">
+        </activity>
+        <activity android:name=".architecture.LifecycleObserverActivity">
+        </activity>
+        <activity android:name=".room.RoomActivity">
+        </activity>
+
+        <service android:name=".notifications.NotificationsActivity$ForegroundNotificationService"/>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts"/>
+    </application>
+
+</manifest>
